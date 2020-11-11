@@ -1,12 +1,13 @@
-* {
+/* * {
   border: 1px solid red !important;
-}
+} */
 
 body {
   background-color: #eceeee;
+  margin: 0;
 }
 
-header {
+header, footer {
   background-color: #2a4658;
 }
 
@@ -33,7 +34,7 @@ a {
   text-decoration: none;
 }
 
-nav a {
+nav a, footer a {
   color: #e3d338;
 }
 
@@ -50,6 +51,11 @@ nav {
 #posts {
   width: 61%;
   margin-top: 3%;
+  margin-right: 3%;
+}
+
+#posts article:first-child {
+  border-bottom: #bcbfc2 solid 2.5px;
 }
 
 #posts p {
@@ -64,7 +70,7 @@ nav {
 
 article a {
   color:#334f61;
-  font-weight: bolder;
+  font-weight: bold;
 }
 
 .first-character {
@@ -98,3 +104,46 @@ aside h3 {
   color: #5c6678;
 }
 
+#sidebar p a {
+  color: #334f61;
+  font-weight: bolder;
+}
+
+#bottom-cta {
+  margin-left: 9%;
+  font-size: 1.5rem;
+}
+
+#bottom-cta a {
+  background-color: white;
+  color: #334f61;
+}
+
+h4 {
+  color: white;
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 12px 0;
+  padding-top: 12px;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 4%;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+footer li {
+  margin-left: 2%;
+}
+
+footer p {
+  margin-top: 0.5%; 
+  margin: 0;
+  color: white;
+  text-align: center;
+  padding-bottom: 12px;
+}
